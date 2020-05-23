@@ -30,8 +30,57 @@
   </ul>
 
   <section>
-  <h2>Фильтр товаров</h2>
+    <h2>Фильтр товаров</h2>
  <!-- Здесь будет форма фильтра -->
+    <form action="https://echo.htmlacademy.ru" method="get">
+      <fieldset>
+  <legend>Сетка:</legend>
+  <ul>
+  <li>
+    <input type="radio" name="Setka" value="adaptive-setka" id="filter-adaptive" checked>
+    <label for="filter-adaptive">Адаптивная</label>
+  </li>
+  <li>
+    <input type="radio" name="Setka" value="fixed-setka" id="filter-fixed">
+    <label for="filter-fixed">Фиксированная</label>
+  </li>
+  <li>
+    <input type="radio" name="Setka" value="stretch-setka" id="filter-stretch">
+    <label for="filter-stretch">Резиновая</label>
+  </li>
+  </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>Особенности:</legend>
+      <ul>
+        <li>
+          <input type="checkbox" name="slider" id="filter-slider" checked>
+    <label for="filter-slider">Слайдер</label>
+  </li>
+  <li>
+    <input type="checkbox" name="benefits-block" id="filter-benefit-block">
+    <label for="filter-benefit-block">Блок преимуществ</label>
+  </li>
+  <li>
+    <input type="checkbox" name="news" id="filter-news" checked>
+    <label for="filter-news">Новости</label>
+  </li>
+  <li>
+    <input type="checkbox" name="gallery" id="filter-gallery">
+    <label for="filter-gallery">Галерея</label>
+  </li>
+  <li>
+    <input type="checkbox" name="basket" id="filter-basket">
+    <label for="filter-basket">Корзина</label>
+  </li>
+</ul>
+</fieldset>
+<button type="submit">Показать</button>
+</form>
+</section>
+
+<section>
   <ul>
     <li><a href="blank.html">По цене</a></li>
     <li><a href="blank.html">По типу</a></li>
@@ -55,36 +104,14 @@
   </ul>
   </section>
 
-  <section>
-  <h2>СЕТКА:</h2>
-  <!-- Здесь будет форма фильтра -->
-  <ul>
-    <li>
-      <p>Адаптивная</p>
-      <p>Фиксированная</p>
-      <p>Резиновая</p>
-    </li>
-  </ul>
-  <h2>Особенности</h2>
-    <!-- Здесь будет форма фильтра -->
-  <ul>
-    <li>
-      <p>Слайдер</p>
-      <p>Блок преимуществ</p>
-      <p>Новости</p>
-      <p>Галерея</p>
-      <p>Корзина</p>
-      <button type="button">Показать</button>
-    </li>
-  </ul>
-
- </section>
+ <section>
  <div class="paginator">
    <a href="#1">1</a>
    <a href="#2">2</a>
    <a href="#3">3</a>
    <a href="#next">Следующая</a>
  </div>
+</section>
   <section>
     <h2>NЁRDS DESIGN STUDIO</h2>
     <ul><li><a href="blank.html">
@@ -119,6 +146,25 @@
     </ul>
   </section>
 </footer>
+
+<section>
+  <h2>Напишите нам</h2>
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label for="write-us-name">Ваше имя:</label>
+      <input id="write-us-name" type="text" name="name" placeholder="Имя Фамилия">
+    </p>
+    <p>
+      <label for="write-us-email">Ваш email:</label>
+      <input id="write-us-email" type="email" name="email" placeholder="email@example.com">
+    </p>
+    <p>
+      <label for="write-us-text">Текст письма:</label>
+      <input id="write-us-text" type="text" name="text" placeholder="В свободной форме">
+    </p>
+    <button type="button">Отправить</button>
+  </form>
+</section>
 
 </body>
 </html>
