@@ -21,9 +21,9 @@
 </header>
 
 <main>
-  <h1>Магазин готовых шаблонов</h1>
+  <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
   <section>
-    <h2>Преимущества</h2>
+    <h2 class="visually-hidden">Преимущества</h2>
     <ul>
       <li>
         <a href="blank.html">
@@ -36,7 +36,7 @@
  </section>
 
  <section>
-   <h2>Услуги</h2>
+   <h2 class="visually-hidden">Услуги</h2>
    <ul>
      <li>
        <a href="blank.html">
@@ -111,8 +111,12 @@
 
  <section>
    <h2>NЁRDS DESIGN STUDIO</h2>
-   <ul><li><a href="blank.html">
-   <img src="img/map.png" width="1440" height="416" alt=""></a></li></ul>
+   <ul>
+     <li>
+       <a href="blank.html">
+       <img src="img/map.png" width="1440" height="416" alt=""></a>
+     </li>
+   </ul>
    <p>
      191186, Санкт-Петербург,<br>
      ул.Б.Конюшенная, д.19/8<br>
@@ -145,15 +149,24 @@
 
 </footer>
 
-<form>
-  <fieldset>
-  <legend>Напишите нам</legend>
-  <p><label for="name">Ваше имя:</label><input type="text" id="name"></p>
-  <p><label for="email">Ваше email:</label><input type="email" id="email"></p>
-  <p><label for="text">Текст письма:</label><input type="text" id="text"></p>
-  </fieldset>
-  <button type="button">Отправить</button>
-</form>
+<section>
+  <h2>Напишите нам</h2>
+  <form action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label for="write-us-name">Ваше имя:</label>
+      <input id="write-us-name" type="text" name="name" placeholder="Имя Фамилия">
+    </p>
+    <p>
+      <label for="write-us-email">Ваш email:</label>
+      <input id="write-us-email" type="email" name="email" placeholder="email@example.com">
+    </p>
+    <p>
+      <label for="write-us-text">Текст письма:</label>
+      <input id="write-us-text" type="text" name="text" placeholder="В свободной форме">
+    </p>
+    <button type="button">Отправить</button>
+  </form>
+</section>
 
 </body>
 </html>
