@@ -1,6 +1,7 @@
 :root {
   --basic-black: #000000;
   --basic-light-black: #000000;
+  --basic-neutral-black: #283136;
   --basic-white: #ffffff;
   --basic-red: #FB565A;
   --basic-dark-red: #E74246;
@@ -21,13 +22,13 @@ body {
   min-width: 1460px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
-  color: black;
+  align-items: center;
+  color: var(--basic-black);
   text-transform: none;
   background-color: var(--basic-white);
 }
@@ -41,6 +42,11 @@ img {
   height: auto;
 }
 
+/*Main header*/
+.inner-page .main-header {
+  background-color: var(--basic-grey);
+}
+
 .button {
   font-weight: 500;
   font-size: 16px;
@@ -51,16 +57,79 @@ img {
   color: var(--basic-white);
 }
 
+.skills {
+  background-color: var(--basic-grey);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.page-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+/*Filters*/
+
+.filter legend, .price {
+  font-weight: bold;
+  font-size: 18px;
+  font-height: 30px;
+  text-transform: uppercase;
+}
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  color: var(--basic-neutral-black);
+}
+
+.filter ul {
+  list-style: none;
+  font-height: 19px;
+}
+
+/**/
+.catalog-list {
+  list-style: none;
+}
+
+/*Pagination*/
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item {
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--basic-grey);
+  width: 50px;
+  height: 50px;
+}
+.next-page {
+  width: 260px;
+}
+
+/*Main navigation*/
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
-  color: black;
+  color: var(--basic-black);
   background-color: var(--basic-grey);
   align-items: center;
   text-transform: uppercase;
 }
 
+/*Site navigation*/
 .site-navigation {
   list-style: none;
 }
@@ -70,11 +139,9 @@ img {
 }
 
 /* User navigation */
-
-
 .site-navigation a,
 .user-navigation a {
-  color: black;
+  color: var(basic-black);
 }
 
 
@@ -91,18 +158,33 @@ img {
 
 .site-navigation a:active,
 .user-navigation a:active {
-  color: black;
+  color: var(basic-black);
   opacity: 0.3;
   background-color: var(--basic-grey);
 }
+
+/*services*/
+.services-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.services-list {
+  list-style: none;
+}
+
 .button-red {
   background-color: var(--basic-red);
   border-radius: 3px;
+  border-color: var(--basic-red);
 }
 
 .button-red:hover {
   background-color: var(--basic-dark-red);
   border-radius: 3px;
+  border-color: var(--basic-dark-red);
 }
 
 .button-red:active {
@@ -110,16 +192,19 @@ img {
   background-color: var(--basic-extra-red);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   border-radius: 3px;
+  border-color: var(--basic-dark-red);
 }
 
 .button-green {
   background-color: var(--basic-green);
   border-radius: 3px;
+  border-color: var(--basic-green);
 }
 
 .button-green:hover {
   background-color: var(--basic-dark-green);
   border-radius: 3px;
+  border-color: var(--basic-dark-green);
 }
 
 .button-green:active {
@@ -127,16 +212,19 @@ img {
   background-color: var(--basic-extra-green);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   border-radius: 3px;
+  border-color: var(--basic-extra-green);
 }
 
 .button-yellow {
   background-color: var(--basic-yellow);
   border-radius: 3px;
+  border-color: var(--basic-yellow);
 }
 
 .button-yellow:hover {
   background-color: var(--basic-dark-yellow);
   border-radius: 3px;
+  border-color: var(--basic-dark-yellow);
 }
 
 .button-yellow:active {
@@ -144,9 +232,10 @@ img {
   background-color: var(--basic-extra-yellow);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   border-radius: 3px;
+  border-color: var(--basic-extra-yellow);
 }
 
-/* skills */
+/*Skills */
 
 .skills-list {
   list-style: none;
@@ -161,15 +250,7 @@ img {
   line-height: 55px;
 }
 
-.services-list {
-  list-style: none;
-}
-.services-item h3 {
-  font-size: 24px;
-  line-height: 30px;
-  align-items: center;
-  text-transform: uppercase;
-}
+/*Footer*/
 
 .footer-social h2 {
   font-weight: bold;
@@ -192,3 +273,9 @@ img {
   height: 81px;
   background: linear-gradient(0deg, #E1E1E1, #E1E1E1), #FFFFFF;
 }
+
+.contacts ul {
+  list-style: none;
+}
+
+/*catalog*/
