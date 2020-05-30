@@ -38,7 +38,9 @@
     <form class="filter" action="https://echo.htmlacademy.ru" method="get">
       <fieldset>
         <label class="price" for="filter-price-2">Стоимость:</label>
+        <div class="price-slider">
         <input type="range" id="filter-price-2" name="filter-price-2" min="0" max="15000" step="1">
+        </div>
       </fieldset>
       <fieldset>
         <legend>Сетка:</legend>
@@ -96,11 +98,14 @@
   </section>
 
   <section class="catalog">
-    <ul class="filter-price-type-name">
-      <li class="filter-price"><a href="#" aria-label="filter-price">По цене</a></li>
-      <li class="filter-type"><a href="#" aria-label="filter-type">По типу</a></li>
-      <li class="filter-name"><a href="#" aria-label="filter-name">По названию</a></li>
-    </ul>
+    <fieldset>
+      <legend>Сортировать</legend>
+      <ul class="filter-price-type-name">
+        <li class="filter-price"><a href="#" aria-label="filter-price">По цене</a></li>
+        <li class="filter-type"><a href="#" aria-label="filter-type">По типу</a></li>
+        <li class="filter-name"><a href="#" aria-label="filter-name">По названию</a></li>
+      </ul>
+  </fieldset>
     <ul class="catalog-list">
       <li class="catalog-item">
         <a href="#">
@@ -111,7 +116,7 @@
         <div class="price-sedona">
           <h3>Sedona</h3>
           <p>Информационный сайт<br>для туристов</p>
-          <button class="button" type="button">9900</button>
+          <button class="button-price-sedona" type="button">9900</button>
         </div>
       </li>
       <li class="catalog-item">
@@ -166,17 +171,23 @@
     </ul>
   </section>
 
-  <section>
+  <section class="contacts">
+    <div class="contacts-item">
     <h2>NЁRDS DESIGN STUDIO</h2>
-    <ul><li><a href="#">
-    <img src="img/map.png" width="1440" height="416" alt=""></a></li></ul>
     <p>
-    191186, Санкт-Петербург,<br>
-    ул.Б.Конюшенная, д.19/8<br>
-    <a href="тел:+78122757575">тел. +7(812)275-75-75</a>
+      191186, Санкт-Петербург,<br>
+      ул.Б.Конюшенная, д.19/8<br>
+      <a href="тел:+78122757575">тел. +7(812)275-75-75</a>
     </p>
-    <a href="blank.html">Напишите нам</a>
- </section>
+    <a class="button" href="#">Напишите нам</a>
+  </div>
+    <ul>
+      <li>
+        <a href="#">
+        <img src="img/map.png" width="1440" height="416" alt=""></a>
+      </li>
+    </ul>
+  </section>
 
 </main>
 
