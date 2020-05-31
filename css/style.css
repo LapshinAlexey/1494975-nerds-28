@@ -156,7 +156,6 @@ img {
   opacity: 0.3;
 }
 
-}
 .filter-price-type-name,
 .filter-price-type-name a {
   font-size: 14px;
@@ -221,7 +220,7 @@ img {
 .price-sedona .button-price-sedona:active {
   background-color: var(--basic-extra-red);
   border-radius: 3px;
-  border-color: var(--basic--extra-red);
+  border-color: var(--basic-extra-red);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   outline: var(--basic-extra-red);
 }
