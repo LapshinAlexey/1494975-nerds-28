@@ -90,9 +90,7 @@ img {
   background-color: var(--basic-grey);
 }
 
-
 /*logo*/
-/*ЛОГО рамка ВРЕМЕННО*/
 .main-header-logo {
   width: 160px;
   height: 65px;
@@ -104,7 +102,6 @@ img {
   margin: 0 auto;
   padding: 0 10px;
 }
-
 
 /*site-navigation ВРЕМЕННО*/
 .site-navigation {
@@ -227,7 +224,6 @@ img {
 }
 
 /*Catalog*/
-
 
 .price-sedona {
   width: 360px;
@@ -414,8 +410,6 @@ h1 {
   text-transform: uppercase;
 }
 
-
-
 .services .button {
   width: 160px;
   height: 50px;
@@ -504,7 +498,6 @@ h1 {
 
 /*Skills */
 
-
 .skills-item {
   text-align: left;
 }
@@ -591,7 +584,6 @@ h1 {
   width: 100%;
 }
 
-
 .sponsors-list a:link {
   opacity: 0.2;
 }
@@ -612,7 +604,6 @@ h1 {
 .contacts-item {
   position: absolute;
 }
-
 
 .contacts h2 {
   font-weight: bold;
@@ -682,7 +673,6 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
 
 /*catalog*/
 
