@@ -87,6 +87,7 @@ img {
 /*Main header*/
 .main-header {
   margin-bottom: 0px;
+  background-color: var(--basic-grey);
 }
 
 
@@ -102,11 +103,6 @@ img {
   width: 1160px;
   margin: 0 auto;
   padding: 0 10px;
-}
-
-.main-navigation-wrapper .container {
-  display: flex;
-  justify-content: space-between;
 }
 
 
@@ -239,7 +235,7 @@ img {
   background-color: var(--basic-grey);
 }
 
-.price-sedona h3 {
+.price-sedona .sedona {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -279,6 +275,11 @@ img {
 }
 
 /*Pagination*/
+
+.pagination-list {
+  display: flex;
+  margin-bottom: 60px;
+}
 
 .pagination-item {
   text-align: center;
@@ -348,9 +349,8 @@ img {
   text-transform: uppercase;
 }
 
-.main-navigation-wrapper {
-  width: 100%;
-  margin-bottom: 60px;
+h1 {
+  text-align: center;
   background-color: var(--basic-grey);
 }
 
