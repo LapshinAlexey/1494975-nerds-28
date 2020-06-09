@@ -226,6 +226,8 @@ img {
 /*Catalog*/
 
 .price-sedona {
+  position: absolute;
+  margin-top: -250px;
   width: 360px;
   height: 231px;
   background-color: var(--basic-grey);
@@ -679,15 +681,24 @@ h1 {
 .container-2 {
   display: grid;
 grid-template-columns: 180px 1fr;
-align-content: start;
+
 }
 
 .container-2 .filter-price-type-name {
-  grid-column: 1 / -1;
   margin-bottom: 40px;
+}
+.container-2 h3 {
+  margin-left: 540px;
+  margin-top: 55px;
+}
+
+.filter-price-type-name {
+  display: grid;
+  margin-right: 228px;
 }
 
 .catalog {
+    position: relative;
     margin-left: 140px;
 }
 
@@ -729,3 +740,165 @@ align-content: start;
   list-style: none;
   line-height: 18px;
 }
+
+
+.price-pink-app {
+  display: none;
+  margin-top: -250px;
+  width: 360px;
+  height: 231px;
+  background-color: var(--basic-grey);
+}
+
+.catalog-item:hover .price-pink-app {
+  display: block;
+  position: absolute;
+}
+.price-pink-app .pink-app {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.price-pink-app .button-price-pink-app {
+  width: 200px;
+  height: 50px;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  border-radius: 3px;
+  border-color: var(--basic-red);
+  outline: var(--basic-red);
+}
+
+.price-barb {
+  display: none;
+  margin-top: -250px;
+  width: 360px;
+  height: 231px;
+  background-color: var(--basic-grey);
+}
+
+.catalog-item:hover .price-barb {
+  display: block;
+  position: absolute;
+}
+.price-barb .barb {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.price-barb .button-price-barb {
+  width: 200px;
+  height: 50px;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  border-radius: 3px;
+  border-color: var(--basic-red);
+  outline: var(--basic-red);
+}
+
+.price-mishka {
+  display: none;
+  margin-top: -250px;
+  width: 360px;
+  height: 231px;
+  background-color: var(--basic-grey);
+}
+
+.catalog-item:hover .price-mishka {
+  display: block;
+  position: absolute;
+}
+.price-mishka .mishka {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.price-mishka .button-price-mishka {
+  width: 200px;
+  height: 50px;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  border-radius: 3px;
+  border-color: var(--basic-red);
+  outline: var(--basic-red);
+}
+
+.price-study {
+  display: none;
+  margin-top: -250px;
+  width: 360px;
+  height: 231px;
+  background-color: var(--basic-grey);
+}
+
+.catalog-item:hover .price-study {
+  display: block;
+  position: absolute;
+}
+.price-study .study {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.price-study .button-price-study {
+  width: 200px;
+  height: 50px;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  border-radius: 3px;
+  border-color: var(--basic-red);
+  outline: var(--basic-red);
+}
+
+.price-kvast {
+  display: none;
+  margin-top: -250px;
+  width: 360px;
+  height: 231px;
+  background-color: var(--basic-grey);
+}
+
+.catalog-item:hover .price-kvast {
+  display: block;
+  position: absolute;
+}
+.price-kvast .kvast {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.price-kvast .button-price-kvast {
+  width: 200px;
+  height: 50px;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+  border-radius: 3px;
+  border-color: var(--basic-red);
+  outline: var(--basic-red);
+}
+
+/*БЛОК НИЖЕ ПОЧЕМУ-ТО НЕ РАБОТАЕТ НА НАВЕДЕНИЕ НА КНОПКУ*/
+/*.price-kvast .button-price-kvast:hover {
+  background-color: var(--basic-dark-red);
+  border-radius: 3px;
+  border-color: var(--basic-dark-red);
+  outline: var(--basic-dark-red);
+}
+
+.price-kvast .button-price-kvast:active {
+  background-color: var(--basic-extra-red);
+  border-radius: 3px;
+  border-color: var(--basic-extra-red);
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  outline: var(--basic-extra-red);
+}*/
