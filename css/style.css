@@ -38,13 +38,6 @@ body {
   background-color: var(--basic-white);
 }
 
-.horizontal-line {
-  width: 1160px;
-  margin: 0 auto;
-  height: 2px;
-  background: var(--basic-grey);
-}
-
 a {
   text-decoration: none;
 }
@@ -94,6 +87,10 @@ img {
   background-color: var(--basic-grey);
 }
 
+.page-title {
+  margin-bottom: 108px;
+}
+
 /*logo*/
 .main-header-logo {
   width: 160px;
@@ -109,7 +106,7 @@ img {
 
 /*site-navigation ВРЕМЕННО*/
 .site-navigation {
-  width: 620px; /*Не знаю где посмотреть ширину контейнер*/
+   /*Не знаю где посмотреть ширину контейнер*/
   margin: 0;
   padding: 0;
 }
@@ -252,8 +249,13 @@ img {
 }
 
 .catalog-item .button-price-sedona {
-  width: 200px;
-  height: 50px;
+  padding-left: 72px;
+  padding-right: 72px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 41px;
   color: var(--basic-white);
   background-color: var(--basic-red);
   border-radius: 3px;
@@ -363,7 +365,8 @@ img {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 202px;
+  justify-content: space-around;
+
 }
 
 h1 {
@@ -383,18 +386,18 @@ h1 {
 }
 
 .user-navigation .basket {
-  padding-left: 50px;
+  margin-left: 20px;
   position: relative;
 }
 
 .basket::before {
-  content: "";
+  content: "бесит";
   position: absolute;
   top: 82px;
   left: 25px;
   width: 15px;
-  height: 11px;
-  background-image: url("..img/cart-icon2.svg");
+  height: 15px;
+  background-image: url("..img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -403,8 +406,7 @@ h1 {
 .user-navigation a {
   color: var(--basic-black);
   display: block;
-  padding-top: 75px;
-  padding-right: 44px;
+  margin-right: 44px;
 }
 
 .site-navigation a:hover,
@@ -416,6 +418,7 @@ h1 {
 .site-navigation a:focus,
 .user-navigation a:focus {
   background-color: var(--basic-grey);
+  border-bottom: 2px solid var(--basic-red);
 }
 
 .site-navigation a:active,
@@ -423,6 +426,7 @@ h1 {
   color: var(--basic-black);
   opacity: 0.3;
   background-color: var(--basic-grey);
+  border-bottom: 2px solid var(--basic-red);
 }
 
 /*services*/
@@ -784,6 +788,8 @@ h1 {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
   padding: 0;
   margin: 0;
   margin-bottom: 25px;
@@ -1010,4 +1016,8 @@ h1 {
 .price-controls {
   display: flex;
   justify-content: space-between;
+}
+
+.modal {
+  display: flex;
 }
